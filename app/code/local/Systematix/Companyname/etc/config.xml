@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Systematix_Companyname>
+			<version>0.0.1</version>
+		</Systematix_Companyname>
+	</modules>
+	<global>
+		<models>
+			<systematix_companyname>
+				<class>Systematix_Companyname_Model</class>
+			</systematix_companyname>
+		</models>
+	</global>
+	<adminhtml>
+		<events>
+			<core_block_abstract_prepare_layout_before>
+				<observers> 
+					<systematix_companyname_addcompanyname>
+						<type>model</type>
+						<class> Systematix_Companyname_Model_Observer</class>
+						<method>addCompanyColumn</method>
+					</systematix_companyname_addcompanyname>
+				</observers>  
+			</core_block_abstract_prepare_layout_before >
+			<eav_collection_abstract_load_before>
+				<observers> 
+					<systematix_companyname_addcompanynamevalue>
+						<type>model</type>
+						<class>Systematix_Companyname_Model_Observer</class>
+						<method>addCompanyColumnValue</method>
+					</systematix_companyname_addcompanynamevalue>
+				</observers>
+			</eav_collection_abstract_load_before>
+		</events>
+	</adminhtml>
+</config>

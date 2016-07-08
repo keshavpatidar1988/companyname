@@ -1,0 +1,3 @@
+app/code/local/Systematix/Companyname/Model/Observer.php  app/code/local/Systematix/Companyname/Model/Observer.php
+app/code/local/Systematix/Companyname/etc/config.xml      app/code/local/Systematix/Companyname/etc/config.xml
+app/etc/modules/Systematix_Companyname.xml                app/etc/modules/Systematix_Companyname.xml

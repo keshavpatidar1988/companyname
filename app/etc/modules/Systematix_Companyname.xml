@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Systematix_Companyname>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Systematix_Companyname>
+	</modules>
+</config>
